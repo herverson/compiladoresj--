@@ -1,14 +1,16 @@
-reservadas = ['if', 'else', 'while', 'System.out.println', 'this', 'new', 'boolean', 'class', 'extends', 'public', 'static', 'void', 'main', 'return', 'int']
+reservadas = ['if', 'else', 'while', 'System.out.println', 'this', 'new', 'boolean', 'class', 'extends', 'public',
+              'static', 'void', 'main', 'return', 'int']
 pontuacao = ['.', '(', ')', '[', ']', '{', '}', ',', ';']
 operadores = ['==', '&&', '-', '+', '*', '!', '=', '!=', '<', '>']
 numeros = "0123456789"
 validateVariavel = "0123456789_"
 letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+
 def geradorTokens(token):
-  print(token)
-  if (token in reservadas or token in pontuacao or token in operadores):
+  if token in reservadas or token in pontuacao or token in operadores:
     return "<" + token + ", >"
-  
+
   index = 0
   totalTimesCountNumber = 0
   totalTimesIterate = 0
@@ -18,13 +20,13 @@ def geradorTokens(token):
       number += i
       totalTimesCountNumber += 1
     totalTimesIterate += 1
-  
-  if (totalTimesCountNumber == totalTimesIterate):
+
+  if totalTimesCountNumber == totalTimesIterate:
     # identificou numero, portanto, deve parar execucao
     return "<num, " + number + ">"
-  
+
   primeiraLeitura = True
-  index = 0
+  index = 1
   variavel = ""
   for i in token:
     if i in letras:
@@ -39,16 +41,19 @@ def geradorTokens(token):
       variavel += i
     else:
       raise ValueError("ERRO LÉXICO: " + token)
-  
-  # variaveis  
+
+  # variaveis
   idIndex = variavel
   idIndexString = idIndex
-  
-  return "<Identifier, " + idIndexString + ">"
+
+  return "<Identifier, " + str(index) + ">"
+
 
 def removeComments():
   pass
 
 
-print(geradorTokens('System.out.println'))
-
+with open('Teste.java', 'r') as f:
+  for line in f:
+    for word in line.split():
+      print(geradorTokens(word))
