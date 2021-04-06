@@ -1,7 +1,5 @@
-class Teste {
-
-    public static void main ( int [ ] a ) {
-
-        System.out.println ( 10 ) ;
+class Teste{
+    public static void main(int[] a){
+        System.out.println(10);
     }
 }
