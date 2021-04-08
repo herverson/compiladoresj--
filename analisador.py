@@ -2,7 +2,7 @@ from lark import Lark
 
 grammar = '''
 start : main_class class_declaration*
-!main_class : "class" IDENTIFIER "{" reserved_string reserved_string reserved_string reserved_string "(" reserved_string "[" "]" IDENTIFIER ")" "{" statement "}" "}"
+!main_class : "class" IDENTIFIER "{" "public" "static" "void" "main" "(" reserved_string "[" "]" IDENTIFIER ")" "{" statement "}" "}"
 class_declaration : "class" IDENTIFIER ( "extends"i IDENTIFIER )? "{" ( var_declaration )* ( method_declaration )* "}"
 var_declaration : type IDENTIFIER ";"
 method_declaration : reserved_string type IDENTIFIER "(" ( type IDENTIFIER ( "," type IDENTIFIER )* )? ")" "{" ( var_declaration )* ( statement )* "return" expression ";" "}"
@@ -52,6 +52,6 @@ test_code = '''class Teste{
 }
 '''
 
-j = Lark(grammar)
+j = Lark(grammar,debug=True)
 parse = j.parse(test_code)
 print(parse)

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e0a11ee-6587-4c23-9037-1685183e3d1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiladoresj--.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiladoresj--.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/Teste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tokens.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Analisador lexico sintatico-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Analisador lexico sintatico-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analisador lexico sintatico.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Analisador lexico sintatico.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analisador.py" beforeDir="false" afterPath="$PROJECT_DIR$/analisador.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -34,7 +34,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617678089194</updated>
-      <workItem from="1617678091996" duration="816000" />
+      <workItem from="1617678091996" duration="1224000" />
+      <workItem from="1617729333577" duration="4268000" />
+      <workItem from="1617923435364" duration="250000" />
     </task>
     <servers />
   </component>
@@ -51,5 +53,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
